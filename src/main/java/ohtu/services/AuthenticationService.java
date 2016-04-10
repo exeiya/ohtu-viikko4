@@ -44,8 +44,7 @@ public class AuthenticationService {
 
     private boolean invalid(String username, String password) {
         // validity check of username and password
-        if (!invalidUsername(username) || invalidPassword(password)) 
-        {
+        if (invalidUsername(username) || invalidPassword(password)) {
             return true;
         }
         return false;
