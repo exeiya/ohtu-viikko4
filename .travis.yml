@@ -1,0 +1,6 @@
+language: java
+script:
+- mvn integration-test
+- mvn checkstyle:check
+after_success:
+- mvn clean cobertura:cobertura coveralls:report
